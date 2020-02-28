@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #49a498;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fil_rouge.fougicrok.controllers.StartController">
+	<stylesheets>
+		<URL value="@/CSS/start.css" />
+	</stylesheets>
+   <children>
+      <ImageView fx:id="logo" fitHeight="363.0" fitWidth="1562.0" layoutX="144.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="214.0">
+         <image>
+            <Image url="@../../../../../../../../../../../wamp64/www/fr/assets/img/logo_blanc.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="line" endX="950.0" fill="WHITE" layoutY="513.0" strokeWidth="12.0" AnchorPane.leftAnchor="479.0" AnchorPane.rightAnchor="479.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#ffffff00" />
+                  <Stop color="#ffffff00" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="0.47766323024054985" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Line>
+      <Label fx:id="baseline" alignment="CENTER" layoutX="-8.0" layoutY="570.0" prefHeight="89.0" prefWidth="1919.0" text="Software de gestion stock et clients" textFill="WHITE">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Label>
+      <Group AnchorPane.leftAnchor="831.0" AnchorPane.rightAnchor="831.0">
+         <children>
+            <Circle fx:id="btn" fill="WHITE" layoutX="950.0" layoutY="869.0" onMouseClicked="#start_log" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Circle>
+            <Label fx:id="btnText" alignment="CENTER" contentDisplay="CENTER" layoutX="881.0" layoutY="826.0" onMouseClicked="#start_log" text="Start" textAlignment="CENTER" textFill="#49a498">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

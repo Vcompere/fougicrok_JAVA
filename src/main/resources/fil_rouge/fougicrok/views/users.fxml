@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #49a498;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fil_rouge.fougicrok.controllers.UsersController">
+	<stylesheets>
+		<URL value="@/CSS/users.css" />
+	</stylesheets>
+   <children>
+      <ImageView fx:id="logo" fitHeight="29.0" fitWidth="488.0" layoutX="164.0" layoutY="447.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="895.755981445" AnchorPane.rightAnchor="895.7559814456249">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../../../../../../../../../../wamp64/www/fr/assets/img/logo_blanc.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab" layoutX="142.0" layoutY="144.0" onMouseClicked="#doubleClic" prefHeight="384.0" prefWidth="544.0" style="-fx-text-inner-color: #98d320;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="login" prefWidth="75.0" text="Login" style="-fx-alignment: CENTER;" />
+          <TableColumn fx:id="prenom" prefWidth="75.0" text="Prénom" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="mail" prefWidth="75.0" text="Mail" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="telephone" prefWidth="75.0" text="Téléphone" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="Sdate" prefWidth="75.0" text="Date d'inscription" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="Cdate" prefWidth="75.0" text="Dernière connexion" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="erreur" prefWidth="75.0" text="Compte d'erreur MDP" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="bloque" prefWidth="75.0" text="Compte bloqué" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="grade" prefWidth="75.0" text="Grade" style="-fx-alignment: CENTER;" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <VBox layoutX="1742.0" layoutY="50.0" spacing="53.0">
+         <children>
+            <Group fx:id="products" layoutX="864.0" layoutY="-714.0" onMouseClicked="#products" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="75.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="898.0" layoutY="849.0" text="Produits" textAlignment="CENTER" textFill="#49a498">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="category" layoutX="880.0" layoutY="-544.0" onMouseClicked="#category" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="252.5">
+               <children>
+                  <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="75.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="884.0" layoutY="849.0" text="Catégories" textAlignment="CENTER" textFill="#49a498">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="orders" layoutX="877.0" layoutY="-337.0" onMouseClicked="#orders" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="455.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="75.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="872.0" layoutY="849.0" text="Commandes" textAlignment="CENTER" textFill="#49a498">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="discount" layoutX="899.0" layoutY="-134.0" onMouseClicked="#discount" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="657.5">
+               <children>
+                  <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="75.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="879.0" layoutY="849.0" text="Promotions" textAlignment="CENTER" textFill="#49a498">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group fx:id="ranks" layoutX="882.0" layoutY="100.0" onMouseClicked="#ranks" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="860.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="75.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="907.0" layoutY="849.0" text="Grades" textAlignment="CENTER" textFill="#49a498">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="50.0" layoutY="805.0" spacing="80.0">
+         <children>
+            <Group>
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Login" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanLogin" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputLogin" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" promptText="Login" style="-fx-text-inner-color: #49a498;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="832.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Group layoutX="286.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Prénom" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanFirstname" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputFirstname" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" promptText="Prénom" style="-fx-text-inner-color: #49a498;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="832.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Group layoutX="604.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Nom" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanName" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputName" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" promptText="Nom" style="-fx-text-inner-color: #49a498;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="832.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Group layoutX="880.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Mail" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanMail" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputMail" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" promptText="Mail" style="-fx-text-inner-color: #49a498;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="832.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Group layoutX="1123.0" layoutY="-2.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Téléphone" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanPhone" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputPhone" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" promptText="Téléphone" style="-fx-text-inner-color: #49a498;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="832.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" fillHeight="false" layoutX="50.0" layoutY="927.0" spacing="80.0">
+         <children>
+            <Group layoutX="8.0" layoutY="125.0">
+               <children>
+                  <Label layoutY="807.0" text="Date d'inscription" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanSDate" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="inputSDate" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" />
+               </children>
+            </Group>
+            <Group layoutX="290.0" layoutY="129.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Date de dernière connexion" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanCDate" layoutX="50.0" layoutY="862.0" textFill="#0fa419">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="inputCDate" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" />
+               </children>
+            </Group>
+            <Group layoutX="611.0" layoutY="122.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="807.0" text="Compte d'erreur(s) de MDP" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spanTry" layoutX="50.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputTry" layoutX="50.0" layoutY="832.0" prefHeight="30.0" prefWidth="205.0" promptText="Compte erreur MDP" style="-fx-text-inner-color: #49a498;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="832.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Group layoutX="952.0" layoutY="961.0">
+               <children>
+                  <CheckBox fx:id="inputBlocked" mnemonicParsing="false" text="Compte bloqué" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <Label layoutX="100.0" layoutY="807.0" text="Grade" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="807.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="inputRank" layoutX="100.0" layoutY="832.0" prefWidth="150.0" promptText="Users" visibleRowCount="3" />
+                  <Label fx:id="spanRank" layoutX="100.0" layoutY="862.0" textFill="#0fa419" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="862.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </HBox>
+      <Button fx:id="ajouterBtn" layoutX="1526.0" layoutY="868.0" mnemonicParsing="false" onAction="#add" text="Ajouter" />
+   </children>
+</AnchorPane>

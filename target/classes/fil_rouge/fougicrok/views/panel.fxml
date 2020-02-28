@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #49a498;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fil_rouge.fougicrok.controllers.PanelController">
+	<stylesheets>
+		<URL value="@/CSS/panel.css" />
+	</stylesheets>
+   <children>
+      <ImageView fx:id="logo" fitHeight="29.0" fitWidth="488.0" layoutX="154.0" layoutY="437.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="895.755981445" AnchorPane.rightAnchor="895.755981445">
+         <image>
+            <Image url="@../../../../../../../../../../../wamp64/www/fr/assets/img/logo_blanc.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Group fx:id="products" layoutX="-519.0" layoutY="-568.0" onMouseClicked="#products" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="182.0">
+         <children>
+            <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="863.0" layoutY="836.0" text="Produits" textAlignment="CENTER" textFill="#49a498">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="users" layoutX="-562.0" layoutY="-558.0" onMouseClicked="#users" AnchorPane.leftAnchor="831.0" AnchorPane.rightAnchor="831.0" AnchorPane.topAnchor="182.0">
+         <children>
+            <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="833.0" layoutY="836.0" text="Utilisateurs" textAlignment="CENTER" textFill="#49a498">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="catgeory" layoutX="420.0" layoutY="-578.0" onMouseClicked="#category" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="182.0">
+         <children>
+            <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="840.0" layoutY="836.0" text="Catégories" textAlignment="CENTER" textFill="#49a498">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="orders" layoutX="-526.0" layoutY="-196.0" onMouseClicked="#orders" AnchorPane.bottomAnchor="235.0" AnchorPane.leftAnchor="350.0">
+         <children>
+            <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="822.0" layoutY="836.0" text="Commandes" textAlignment="CENTER" textFill="#49a498">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="discount" layoutX="88.0" layoutY="-116.0" onMouseClicked="#discount" AnchorPane.bottomAnchor="235.0" AnchorPane.leftAnchor="831.0" AnchorPane.rightAnchor="831.0">
+         <children>
+            <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="829.0" layoutY="836.0" text="Promotions" textAlignment="CENTER" textFill="#49a498">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="ranks" layoutX="514.0" layoutY="-228.0" onMouseClicked="#ranks" AnchorPane.bottomAnchor="235.0" AnchorPane.rightAnchor="350.0">
+         <children>
+            <Circle fill="WHITE" layoutX="950.0" layoutY="869.0" radius="129.0" stroke="#000000fe" strokeType="INSIDE" strokeWidth="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="880.0" layoutY="836.0" text="Grades" textAlignment="CENTER" textFill="#49a498">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Group>
+   </children>
+</AnchorPane>
